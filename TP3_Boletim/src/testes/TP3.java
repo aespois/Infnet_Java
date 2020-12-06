@@ -60,16 +60,12 @@ public class TP3 {
 						
 						al.setNome(in.next());
 						
-						if(al.getNome().length() < 5) {
+						if(al.getNome().length() < 3) {
 							throw new DadosIncorretosException("O preenchimento do campo 'nome' está incorreto");
 						}
 						
 						System.out.print("Idade: ");
 						al.setIdade(in.nextInt());
-						
-						if(al.getIdade() < 18) {
-							throw new DadosIncorretosException("Não é possível cadastrar menores de idade");
-						}
 						
 						System.out.print("Nota da AV1: ");
 						al.setAv1(in.nextFloat());
@@ -108,6 +104,10 @@ public class TP3 {
 						
 						System.out.print("Idade: ");
 						prof.setIdade(in.nextInt());
+						
+						if(prof.getIdade() < 18) {
+							throw new DadosIncorretosException("Não é possível cadastrar professores menores de idade");
+						}
 						
 						System.out.print("Pós Graduado: ");
 						prof.setPosGraducao(in.nextBoolean());
