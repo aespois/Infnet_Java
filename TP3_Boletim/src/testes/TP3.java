@@ -1,5 +1,7 @@
 package testes;
 
+import exceptions.DadosIncorretosException;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -24,7 +26,7 @@ public class TP3 {
 			}
 		}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws DadosIncorretosException {
 		pessoas = new Pessoa[Constante.QTDE];
 
 		Scanner in = new Scanner(System.in);
@@ -55,10 +57,19 @@ public class TP3 {
 						
 						System.out.println("----------------------------------------");
 						System.out.print("Nome Completo: ");
+						
 						al.setNome(in.next());
+						
+						if(al.getNome().length() < 5) {
+							throw new DadosIncorretosException("O preenchimento do campo 'nome' está incorreto");
+						}
 						
 						System.out.print("Idade: ");
 						al.setIdade(in.nextInt());
+						
+						if(al.getIdade() < 18) {
+							throw new DadosIncorretosException("Não é possível cadastrar menores de idade");
+						}
 						
 						System.out.print("Nota da AV1: ");
 						al.setAv1(in.nextFloat());
