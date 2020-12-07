@@ -13,15 +13,3 @@ Manual de utilização do Sistema
     1.3. Caso não haja retorno do CMD, configure as variáveis do seu ambiente
     
     1.4. Teste novamente o comando em seu CMD. Caso tudo esteja ok, você pode seguir com a instalação de uma IDE (Eclipse ou NetBeans) apontando para o JDK instalado em  C:\Program Files\Java
-
-
-2. Casos de Uso
-
-    2.1. Inserindo um novo aluno e suas respectivas notas
-    
-    2.2. Consultando as notas e situação de um aluno
-    
-    2.3. Consultando as notas e situação de todos os alunos da turma
-    
-    2.4. Saindo do sistema
-    
