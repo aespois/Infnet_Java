@@ -8,6 +8,7 @@ import java.util.Scanner;
 import auxiliar.Constante;
 import dominio.Aluno;
 import dominio.Professor;
+//import dominio.Instituicao;
 import negocio.Pessoa;
 
 public class TP3 {
