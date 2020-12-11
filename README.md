@@ -1,4 +1,4 @@
-# Infnet_Java
+# Infnet - Java
 Fundamentos do Desenvolvimento Java
 
 Manual de utilização do Sistema
